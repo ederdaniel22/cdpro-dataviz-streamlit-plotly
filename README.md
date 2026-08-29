@@ -6,6 +6,7 @@ Material de aula sobre visualização de dados em Python, com notebook explorat�
 
 - `LOCAL_CDPRO_Aula_03_Visualização_de_Dados_Streamlit,_Plotly,_Matplotlib.ipynb`: notebook com exemplos de gráficos usando Plotly, Matplotlib e Seaborn (dispersão, histograma, barras, gráfico de bolhas, sliders interativos, etc.).
 - `dashboard_streamlit.py`: dashboard Streamlit com os principais KPIs do dataset de clientes/empréstimos (renda média, taxa de aprovação, histórico de crédito, entre outros), com filtros interativos.
+- `Vencedor.html`: relatório de análise exploratória (EDA) do dataset, gerado com [YData Profiling](https://github.com/ydataai/ydata-profiling) a partir do mesmo notebook rodado no Google Colab. Basta baixar e abrir no navegador para visualizar estatísticas, correlações e distribuições de todas as colunas.
 - `requirements.txt`: dependências do projeto.
 
 ## Dataset
