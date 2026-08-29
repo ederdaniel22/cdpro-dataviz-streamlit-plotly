@@ -1,2 +1,48 @@
-# cdpro-dataviz-streamlit-plotly
-Aula de Visualização de Dados (Streamlit, Plotly, Matplotlib) - notebook e dashboard de KPIs
+# CDPRO - Visualização de Dados (Streamlit, Plotly, Matplotlib)
+
+Material de aula sobre visualização de dados em Python, com notebook exploratório e um dashboard interativo em Streamlit.
+
+## Conteúdo
+
+- `LOCAL_CDPRO_Aula_03_Visualização_de_Dados_Streamlit,_Plotly,_Matplotlib.ipynb`: notebook com exemplos de gráficos usando Plotly, Matplotlib e Seaborn (dispersão, histograma, barras, gráfico de bolhas, sliders interativos, etc.).
+- `dashboard_streamlit.py`: dashboard Streamlit com os principais KPIs do dataset de clientes/empréstimos (renda média, taxa de aprovação, histórico de crédito, entre outros), com filtros interativos.
+- `requirements.txt`: dependências do projeto.
+
+## Dataset
+
+O dashboard e parte do notebook usam uma base de clientes com dados de solicitação de empréstimo (colunas como `sexo`, `educacao`, `renda`, `emprestimo`, `historico_credito`, `aprovacao_emprestimo`, entre outras). Ajuste o caminho do CSV em `dashboard_streamlit.py` (constante `CAMINHO_CSV`) para o local do arquivo na sua máquina.
+
+## Como rodar
+
+### 1. Criar e ativar o ambiente virtual
+
+```powershell
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+```
+
+### 2. Instalar as dependências
+
+```powershell
+pip install -r requirements.txt
+```
+
+### 3. Rodar o notebook
+
+Abra o `.ipynb` no VS Code (ou Jupyter) e selecione o kernel do `.venv`.
+
+### 4. Rodar o dashboard
+
+```powershell
+streamlit run dashboard_streamlit.py
+```
+
+O dashboard abre em `http://localhost:8501`.
+
+## Tecnologias
+
+- Python
+- Pandas
+- Plotly Express / Graph Objects
+- Matplotlib / Seaborn
+- Streamlit
